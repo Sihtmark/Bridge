@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufr-ZW-ckT" customClass="DayPickerView" customModule="Bridge" customModuleProvider="target">
+                                <rect key="frame" x="16" y="59" width="361" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_5942" translatesAutoresizingMaskIntoConstraints="NO" id="OSo-Iy-6as">
+                                <rect key="frame" x="77" y="320" width="239" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="9wc-0C-Qqv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25° C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-ZO-Ec2">
+                                <rect key="frame" x="160" y="632" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jyi-ZO-Ec2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="1YG-Jr-FOu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ufr-ZW-ckT" secondAttribute="trailing" constant="16" id="6Mi-m5-wiM"/>
+                            <constraint firstItem="ufr-ZW-ckT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Zg-O0-n9a"/>
+                            <constraint firstItem="OSo-Iy-6as" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="Tcx-VP-WA4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jyi-ZO-Ec2" secondAttribute="trailing" constant="160" id="ZLy-bt-GPG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jyi-ZO-Ec2" secondAttribute="bottom" constant="165" id="l8m-tX-NYh"/>
+                            <constraint firstAttribute="bottom" secondItem="ufr-ZW-ckT" secondAttribute="bottom" constant="733" id="mID-uh-UOZ"/>
+                            <constraint firstItem="ufr-ZW-ckT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pui-yO-YPt"/>
+                            <constraint firstItem="ufr-ZW-ckT" firstAttribute="centerX" secondItem="OSo-Iy-6as" secondAttribute="centerX" id="rH4-Zj-muP"/>
+                            <constraint firstItem="OSo-Iy-6as" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vpM-Y6-pRX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dayPicker" destination="ufr-ZW-ckT" id="P1W-AB-Yi7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_5942" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
